@@ -1,0 +1,224 @@
+/*Remise à zéro supplémentaire*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*bases de la page*/
+body{
+    position: fixed;
+    overflow: hidden;
+}
+
+#global{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+/*-----------barre navigation dessus-----------*/
+header{
+    width: 100%;
+    display: inline-block;
+}
+
+figure{
+    clear: both;
+}
+
+nav{
+    width: 100vw;
+    position: fixed;
+    display: inline-flex;
+    margin: -1vw 50vw;
+}
+
+ul ol li{
+    display: inline-flex;
+}
+
+#top_Logo{
+    margin-left: 65vw;
+    margin-top: 1vw;
+    width: 4vw;
+}
+
+#top_Menu{                       
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: row;
+    position: fixed;
+    margin: 0 -15%;
+    gap: 1.5vw;
+    text-transform: capitalize;
+    font-size: 0.9vw;
+}
+
+/*---État de survol----*/
+
+#top_Menu :hover{
+    background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
+    padding: 2px 2px;
+    cursor: pointer;
+}
+
+/*---------image du centre et sa section-----------*/
+section{
+    position: relative;
+    display: flex;
+    margin-top:2vw;
+    margin-bottom: 10vw;
+}
+
+figure{
+    margin: 0 0 0 -40%;
+}
+
+#image_Centre{
+    width: 50vw;
+    position: relative;
+    margin: 0 0 0 130%;
+    box-shadow: 10px 10px 15px rgb(128,128,128);
+}
+
+figcaption{
+    background-color: rgb(0,0,0,0.5);
+    color: rgb(255,255,255);
+    padding: 1%;
+    width: 100%;
+    height: 9.5%;
+    margin: -4.3% 0 0 130%;
+    position: relative;
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+
+
+/*------------bas de la page-------------*/
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    position: absolute;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+#infos{
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    gap: 8%;
+    font-size: 1.2vw;
+    text-transform: capitalize;
+    position: relative;
+    display: flex; 
+    flex-direction: row;
+    flex-flow: row;
+    margin: 3% -25%;
+    width: 100%;
+}
+
+#contacts{
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    margin: 5.5% -75%;
+    font-size: 0.65vw;
+    gap: 0.5vw;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+}
+
+span{
+    position: relative;
+    left: 0.8vw;
+}
+
+#maison{
+    position: absolute;
+    width: 1vw;
+    left: -25.3vw;
+    bottom: 6.6vw;
+    filter: brightness(2);
+}
+
+#telephone{
+    position: absolute;
+    width: 0.6vw;
+    left: -25.1vw;
+    filter: brightness(1);
+}
+
+#logos_Medias_Sociaux{
+    position: absolute;            
+    display: flex;
+    width: 10%;
+    height: 13%;
+    gap: 5%;
+    margin: 5.5% -8%;
+    overflow: visible;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    margin-left: 25.5%;
+    margin-top: 10%;              
+    position: relative;
+    font-size: 0.5vw;
+    width: 20%;
+}
+/*--------Boutton et input texte--------*/                       
+
+
+input{
+    background: transparent;
+    margin: 5.49vw 8.5vw;
+    width: 9.5vw;
+    height: 1.51vw;
+    display: flex;
+    position: fixed;
+    font-size: 1vw;
+    border: solid rgb(128,128,128) 0.1vw;
+    font-size: 0.7vw;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    border-right: none;
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 0.7vw;
+}
+
+#boutton{
+    width: 1.5vw;
+    height: 1.5vw;
+    display: flex;
+    position: absolute;
+    top: -31.75vw;
+    margin: 37.22vw 18vw;
+    font-size: 0.9vw;
+    color: rgb(128,128,128);
+    background: none;
+    border: solid rgb(128,128,128) 0.1vw;
+    cursor: pointer;
+    border-left: none;
+    }
+
+    #loupe{
+        width: 1vw;
+        margin: 0.1vw 0vw 0vw 0.2vw;
+        filter: brightness(3);
+    }
